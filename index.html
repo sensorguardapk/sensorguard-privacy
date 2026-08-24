@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SensorGuard: Mic & Cam Shield</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #22c55e;
+            --border: #334155;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        .date {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
+            color: #38bdf8;
+        }
+        p, ul {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        strong {
+            color: var(--text-primary);
+        }
+        .highlight-box {
+            background-color: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight-box p {
+            color: var(--text-primary);
+            margin: 0;
+        }
+        footer {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="date">Last Updated: August 2026</div>
 
+        <div class="highlight-box">
+            <p><strong>Core Guarantee:</strong> SensorGuard: Mic & Cam Shield operates on a strict zero-knowledge, local-first architecture. We do not collect, transmit, store, or sell any personal data, audio recordings, or video feeds.</p>
+        </div>
+
+        <h2>1. Overview</h2>
+        <p>SensorGuard: Mic & Cam Shield ("we", "our", or "the app") is designed to empower users with real-time awareness and control over hardware sensor access on their Android devices. Your privacy is the fundamental premise of our application.</p>
+
+        <h2>2. Data Collection and Processing</h2>
+        <p><strong>We collect zero personal data.</strong> All monitoring, logging, and evaluation routines are executed strictly on your local device hardware:</p>
+        <ul>
+            <li><strong>No Cloud Servers:</strong> SensorGuard does not connect to external servers or cloud databases to offload telemetry or user logs.</li>
+            <li><strong>No Audio/Video Recording:</strong> The application monitors access states (active/inactive status) of device sensors. It does not record, stream, or inspect audio signals, video frames, or microphone input.</li>
+            <li><strong>Local SQLite / Room Database:</strong> All history logs and custom remediation rules are stored locally inside the application's secure sandbox on your device and are permanently deleted when cleared or when the app is uninstalled.</li>
+        </ul>
+
+        <h2>3. Permissions Used and Technical Purpose</h2>
+        <p>SensorGuard requests specific Android operating system permissions solely to perform its advertised security functions:</p>
+        <ul>
+            <li><strong>Microphone & Camera Permissions:</strong> Used exclusively to detect foreground and background sensor state transitions in real time.</li>
+            <li><strong>Usage Access / AppOps:</strong> Used to correlate sensor state activations with the corresponding background or foreground application package.</li>
+            <li><strong>Post Notifications:</strong> Used to display immediate heads-up alerts and action controls when background sensor access is detected.</li>
+        </ul>
+
+        <h2>4. Third-Party Sharing & Analytics</h2>
+        <p>SensorGuard does not integrate third-party tracking SDKs, analytics platforms, advertising networks, or data brokers. No identifiable or unidentifiable information is ever shared with external entities.</p>
+
+        <h2>5. User Data Control and Deletion</h2>
+        <p>You maintain full control over all logged data generated on your device:</p>
+        <ul>
+            <li><strong>Clear Logs:</strong> You can purge your entire activity history and custom whitelist rules at any time via the in-app reset controls.</li>
+            <li><strong>Complete Removal:</strong> Uninstalling the application immediately removes the local SQLite database and all cached settings from your device.</li>
+        </ul>
+
+        <h2>6. Security</h2>
+        <p>Because all logic remains sandboxed within your local device environment, your data is protected by the native security model of the Android operating system.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or inquiries regarding this Privacy Policy, you can reach out via your developer support channel on Google Play.</p>
+
+        <footer>
+            &copy; 2026 SensorGuard. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
